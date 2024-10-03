@@ -1,7 +1,6 @@
 import {
+  Announcement,
   Attendance,
-  Empty1,
-  Empty2,
   LeaveReport,
   RequestForApproval,
   TodaysAttendance,
@@ -12,6 +11,7 @@ export const dashboardWidgets = [
   { id: 2, heading: "Leave Report", children: <LeaveReport /> },
   { id: 3, heading: "Attendance", children: <Attendance /> },
   { id: 4, heading: "Today's Attendance", children: <TodaysAttendance /> },
-  { id: 5, heading: "", children: <Empty1 /> },
-  { id: 6, heading: "", children: <Empty2 /> },
+  { id: 5, heading: "Announcement", children: <Announcement /> },
+  { id: 6, heading: "", children: "" },
+  { id: 7, heading: "", children: "" },
 ];

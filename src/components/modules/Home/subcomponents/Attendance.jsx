@@ -12,14 +12,13 @@ const Attendance = ({ children }) => {
     minutes: 0,
     seconds: 0,
   });
-  const [isCounting, setIsCounting] = useState(false);
   const [isCheckedIn, setIsCheckedIn] = useState(false);
 
   useEffect(() => {
     let upInterval;
     let downInterval;
 
-    if (isCounting) {
+    if (isCheckedIn) {
       upInterval = setInterval(() => {
         setCountUpTime((prevTime) => {
           let { hours, minutes, seconds } = prevTime;
@@ -69,14 +68,12 @@ const Attendance = ({ children }) => {
       clearInterval(upInterval);
       clearInterval(downInterval);
     };
-  }, [isCounting]);
+  }, [isCheckedIn]);
 
   const handleButtonClick = () => {
     if (!isCheckedIn) {
-      setIsCounting(true);
       setIsCheckedIn(true);
     } else {
-      setIsCounting(false);
       setCountUpTime({ hours: 0, minutes: 0, seconds: 0 });
       setCountDownTime({ hours: 8, minutes: 0, seconds: 0 });
       setIsCheckedIn(false);

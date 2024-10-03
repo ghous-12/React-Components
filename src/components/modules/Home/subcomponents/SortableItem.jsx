@@ -2,7 +2,6 @@ import React from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import Widget from "./Widget";
-import { RequestForApproval } from ".";
 
 export default function SortableItem({ item }) {
   let { id, heading, children } = item;
@@ -16,7 +15,11 @@ export default function SortableItem({ item }) {
 
   return (
     <div key={id} ref={setNodeRef} style={style} {...attributes} {...listeners}>
-      <Widget heading={heading}>{children}</Widget>
+      {heading ? (
+        <Widget heading={heading}>{children}</Widget>
+      ) : (
+        <div className=" w-full h-72 "></div>
+      )}
     </div>
   );
 }

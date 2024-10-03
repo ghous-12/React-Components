@@ -1,36 +1,22 @@
 import React from "react";
-import { Star } from "lucide-react";
+import { leaveReport } from "../../../../utils/dummyData";
 
 const LeaveReport = () => {
   return (
-    <div>
-      <div className="flex  py-1">
-        <div className="w-8 flex justify-center pt-1">
-          <Star size={18} color="#dc060c" fill="#dc060c" />
-        </div>
-        <div className="flex-1">
-          <h3 className="text-base font-medium">Mr. Ali</h3>
-          <p className="text-sm text-[rgb(119,118,118)]">Software Engineer</p>
-        </div>
-      </div>
-      <div className="flex  py-1">
-        <div className="w-8 flex justify-center pt-1">
-          <Star size={18} />
-        </div>
-        <div className="flex-1">
-          <h3 className="text-base font-medium">Mr. Shaheer</h3>
-          <p className="text-sm text-[rgb(119,118,118)]">Software Engineer</p>
-        </div>
-      </div>
-      <div className="flex  py-1">
-        <div className="w-8 flex justify-center pt-1">
-          <Star size={18} />
-        </div>
-        <div className="flex-1">
-          <h3 className="text-base font-medium">Ms. Urooj</h3>
-          <p className="text-sm text-[rgb(119,118,118)]">Quality Assurance</p>
-        </div>
-      </div>
+    <div className="flex flex-col gap-y-2 justify-center ">
+      {leaveReport.map(({ id, name, total, used }) => {
+        return (
+          <div key={id} className="flex gap-x-2 ">
+            <div className="w-8 h-8 border-2 border-lime-500 rounded-full flex justify-center ">
+              {used}
+            </div>
+            <h3 className="text-base text-black font-medium">
+              {name}
+              <p className="text-sm text-[rgb(119,118,118)]">Total: {total}</p>
+            </h3>
+          </div>
+        );
+      })}
     </div>
   );
 };
