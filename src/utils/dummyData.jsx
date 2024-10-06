@@ -78,3 +78,59 @@ export const officeAnnouncements = [
     text: "15 Nov: Team Meeting",
   },
 ];
+
+export const holidayNotice = [
+  {
+    id: 1,
+    icon: <Bookmark size={19} />,
+    text: "6 September Holiday",
+  },
+  {
+    id: 2,
+    icon: <Bookmark size={19} />,
+    text: "12 December Eid ul Fitar",
+  },
+];
+
+// export const sideBarData = [
+//   {
+//     id: 1,
+//     callToAction: (
+//       <Button className="flex flex-col hover:bg-red-800 rounded-none py-3  text-xs font-bold">
+//         <Home /> Home
+//       </Button>
+//     ),
+//   },
+//   {
+//     id: 2,
+//     callToAction: (
+//       <Button className="flex flex-col hover:bg-red-800 rounded-none py-3  text-xs font-bold">
+//         <Calendar /> Attendance
+//       </Button>
+//     ),
+//   },
+//   {
+//     id: 3,
+//     callToAction: (
+//       <Button className="flex flex-col hover:bg-red-800 rounded-none py-3  text-xs font-bold">
+//         <Folder /> Leave
+//       </Button>
+//     ),
+//   },
+//   {
+//     id: 4,
+//     callToAction: (
+//       <Button className="flex flex-col hover:bg-red-800 rounded-none py-3  text-xs font-bold">
+//         <Calendar /> Time Sheet
+//       </Button>
+//     ),
+//   },
+//   {
+//     id: 5,
+//     callToAction: (
+//       <Button className="flex flex-col hover:bg-red-800 rounded-none py-3  text-xs font-bold">
+//         <ArrowRight /> Others
+//       </Button>
+//     ),
+//   },
+// ];

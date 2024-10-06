@@ -1,10 +1,10 @@
 import React from "react";
-import { officeAnnouncements } from "../../../../utils/dummyData";
+import { holidayNotice } from "../../../../utils/dummyData";
 
-const Announcement = () => {
+const Holiday = () => {
   return (
     <>
-      {officeAnnouncements.map(({ id, icon, text }) => {
+      {holidayNotice.map(({ id, icon, text }) => {
         return (
           <div key={id} className="flex pb-3 ">
             {/* icon */}
@@ -24,4 +24,4 @@ const Announcement = () => {
   );
 };
 
-export default Announcement;
+export default Holiday;

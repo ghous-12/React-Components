@@ -45,8 +45,8 @@ const Home = () => {
     >
       <div className="bg-[rgb(242,240,241)] h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 py-8">
         <SortableContext items={items}>
-          {items.map((item) => (
-            <SortableItem key={item.id} item={item} />
+          {items.map((item, index) => (
+            <SortableItem item={item} key={item.id} />
           ))}
         </SortableContext>
       </div>

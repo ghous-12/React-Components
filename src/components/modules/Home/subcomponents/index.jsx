@@ -5,3 +5,4 @@ export { default as Attendance } from "./Attendance";
 export { default as TodaysAttendance } from "./TodaysAttendance";
 export { default as Announcement } from "./Announcement";
 export { default as SortableItem } from "./SortableItem";
+export { default as Holiday } from "./Holiday";

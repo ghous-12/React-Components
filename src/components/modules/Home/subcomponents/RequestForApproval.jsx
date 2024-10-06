@@ -16,7 +16,7 @@ const Container = () => {
             <div>
               <img
                 src={image}
-                className=" w-10 h-10 rounded-full bg-clip-padding bg-center bg-contain"
+                className="w-10 h-10 rounded-full bg-clip-padding bg-center bg-contain object-cover"
               />
             </div>
           </div>
