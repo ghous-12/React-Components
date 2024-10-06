@@ -1,20 +1,10 @@
 import React from "react";
-import { HomeView } from "./views";
-import { SideBar, NavBar, CallToActionBar } from "./components/shared";
+import Layout from "./layout/Layout";
 
 const App = () => {
   return (
     <>
-      <div className="flex">
-        <div className="">
-          <SideBar />
-        </div>
-        <div className="w-full">
-          <NavBar />
-          <CallToActionBar />
-          <HomeView />
-        </div>
-      </div>
+      <Layout></Layout>
     </>
   );
 };
