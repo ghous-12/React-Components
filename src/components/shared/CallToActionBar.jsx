@@ -30,7 +30,8 @@ const CallToActionBar = () => {
       </div>
       <div className="flex px-6 gap-x-6 justify-around items-center ">
         <Button className="border-2 border-gray-600 rounded-none text-xs text-gray-600 h-5 items-center font-bold px-4 py-1">
-          <Check size={17} color="#4b5563" /> Apply Leave
+          <Check size={17} color="#4b5563" />
+          Apply Leave
         </Button>
         <Button className="border-2 border-gray-600 rounded-none text-xs text-gray-600 h-5 items-center font-bold px-4 py-1">
           Log Time

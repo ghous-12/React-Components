@@ -12,10 +12,10 @@ const Layout = ({ children }) => {
         <div className="">
           <SideBar />
         </div>
-        <div className="w-full">
+        <div className="w-full flex flex-col">
           <NavBar />
           <CallToActionBar />
-          <HomeView />
+          {children}
         </div>
       </div>
     </AttendanceProvider>
